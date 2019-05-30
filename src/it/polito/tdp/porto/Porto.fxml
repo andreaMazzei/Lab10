@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="it.polito.tdp.porto.PortoController">
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.porto.PortoController">
    <top>
       <Label text="Laboratorio 10 - Porto" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -37,9 +36,9 @@
                   <Label text="Primo autore" />
                   <Label text="Secondo autore" GridPane.rowIndex="1" />
                   <ComboBox fx:id="boxPrimo" prefWidth="150.0" GridPane.columnIndex="1" />
-                  <ComboBox fx:id="boxSecondo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <Button mnemonicParsing="false" onAction="#handleCoautori" text="Trova co-autori" GridPane.columnIndex="2" />
-                  <Button mnemonicParsing="false" onAction="#handleSequenza" text="Sequenza articoli" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="boxSecondo" disable="true" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btnCoautori" mnemonicParsing="false" onAction="#handleCoautori" text="Trova co-autori" GridPane.columnIndex="2" />
+                  <Button fx:id="btnSequenza" disable="true" mnemonicParsing="false" onAction="#handleSequenza" text="Sequenza articoli" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                </children>
             </GridPane>
             <TextArea fx:id="txtResult" />
